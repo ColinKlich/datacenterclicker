@@ -1,0 +1,196 @@
+{
+  "upgrades": [
+    {
+      "id": "server_autotune",
+      "name": "Server Autotuning",
+      "cost": 5000,
+      "requires": [],
+      "effects": {
+        "global_mult": 1.25
+      }
+    },
+    {
+      "id": "fiber_opt",
+      "name": "Fiber Optimization",
+      "cost": 12000,
+      "requires": [],
+      "effects": {
+        "tags_mult": {
+          "land": 1.1,
+          "offshore": 1.1,
+          "arctic": 1.1
+        }
+      }
+    },
+    {
+      "id": "click_boost_1",
+      "name": "Click Boost I",
+      "cost": 100,
+      "requires": [],
+      "effects": {
+        "click_add": 1
+      }
+    },
+    {
+      "id": "click_boost_2",
+      "name": "Click Boost II",
+      "cost": 2500,
+      "requires": [
+        {
+          "type": "owned",
+          "generator": "raspi_rack",
+          "count": 25
+        }
+      ],
+      "effects": {
+        "click_add": 5
+      }
+    },
+    {
+      "id": "liquid_cooling",
+      "name": "Liquid Cooling",
+      "cost": 12000,
+      "requires": [
+        {
+          "type": "owned",
+          "generator": "regional_dc",
+          "count": 10
+        }
+      ],
+      "effects": {
+        "type_mult": {
+          "regional_dc": 2.0
+        }
+      }
+    },
+    {
+      "id": "solar_batteries",
+      "name": "Solar + Batteries",
+      "cost": 18000,
+      "requires": [
+        {
+          "type": "owned",
+          "generator": "solar_microcloud",
+          "count": 25
+        }
+      ],
+      "effects": {
+        "type_mult": {
+          "solar_microcloud": 2.5
+        }
+      }
+    },
+    {
+      "id": "ocean_heat_recovery",
+      "name": "Ocean Heat Recovery",
+      "cost": 30000,
+      "requires": [
+        {
+          "type": "owned",
+          "generator": "offshore_dc",
+          "count": 10
+        }
+      ],
+      "effects": {
+        "type_mult": {
+          "offshore_dc": 2.0
+        },
+        "temp_cost_discount": {
+          "offshore_dc": 0.2
+        }
+      }
+    },
+    {
+      "id": "water_recycling",
+      "name": "Water Recycling",
+      "cost": 20000,
+      "requires": [],
+      "effects": {
+        "water_mult_global": 0.2
+      }
+    },
+    {
+      "id": "wind_ppas",
+      "name": "Wind PPAs",
+      "cost": 22000,
+      "requires": [],
+      "effects": {
+        "carbon_penalty_mult": 0.5
+      }
+    },
+    {
+      "id": "dry_cooling_kit",
+      "name": "Dry-Cooling Kit",
+      "cost": 15000,
+      "requires": [],
+      "effects": {
+        "law_compliance": [
+          "water_ban"
+        ]
+      }
+    },
+    {
+      "id": "community_programs",
+      "name": "Community Programs",
+      "cost": 32000,
+      "requires": [],
+      "effects": {
+        "region_pushback_mult": 0.5
+      }
+    },
+    {
+      "id": "arctic_hardening",
+      "name": "Arctic Hardening",
+      "cost": 60000,
+      "requires": [],
+      "effects": {
+        "tags_mult": {
+          "arctic": 1.3
+        }
+      }
+    },
+    {
+      "id": "quantum_primer",
+      "name": "Quantum Primer",
+      "cost": 500000,
+      "requires": [
+        {
+          "type": "owned",
+          "generator": "nuclear_dc",
+          "count": 5
+        }
+      ],
+      "effects": {
+        "unlock_generators": [
+          "quantum_megaplex"
+        ]
+      }
+    },
+    {
+      "id": "space_licensing",
+      "name": "Space Licensing",
+      "cost": 800000,
+      "requires": [
+        {
+          "type": "owned",
+          "generator": "arctic_dome",
+          "count": 10
+        }
+      ],
+      "effects": {
+        "unlock_generators": [
+          "orbital_station"
+        ]
+      }
+    },
+    {
+      "id": "global_optimizer",
+      "name": "Global Optimizer",
+      "cost": 250000,
+      "requires": [],
+      "effects": {
+        "global_mult": 1.5
+      }
+    }
+  ]
+}

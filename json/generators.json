@@ -1,0 +1,254 @@
+{
+  "generators": [
+    {
+      "id": "raspi_rack",
+      "name": "Raspberry Pi Rack",
+      "base_cost": 10,
+      "cost_mult": 1.12,
+      "base_ccps": 0.1,
+      "base_carbon": 0.0,
+      "base_water": 0.0,
+      "tags": [
+        "early",
+        "indoor"
+      ],
+      "thresholds": [
+        25,
+        50,
+        100,
+        200
+      ],
+      "threshold_mult": 2.0
+    },
+    {
+      "id": "garage_server",
+      "name": "Garage Server Room",
+      "base_cost": 80,
+      "cost_mult": 1.13,
+      "base_ccps": 0.8,
+      "base_carbon": 0.1,
+      "base_water": 0.0,
+      "tags": [
+        "early",
+        "heat"
+      ],
+      "thresholds": [
+        25,
+        50,
+        100,
+        200
+      ],
+      "threshold_mult": 2.0
+    },
+    {
+      "id": "mini_container",
+      "name": "Mini DC Container",
+      "base_cost": 600,
+      "cost_mult": 1.14,
+      "base_ccps": 5,
+      "base_carbon": 0.6,
+      "base_water": 0.1,
+      "tags": [
+        "early",
+        "land"
+      ],
+      "thresholds": [
+        25,
+        50,
+        100,
+        200
+      ],
+      "threshold_mult": 2.0
+    },
+    {
+      "id": "regional_dc",
+      "name": "Regional Data Center",
+      "base_cost": 4000,
+      "cost_mult": 1.15,
+      "base_ccps": 35,
+      "base_carbon": 3.0,
+      "base_water": 2.0,
+      "tags": [
+        "mid",
+        "land",
+        "water_heavy",
+        "carbon_heavy"
+      ],
+      "thresholds": [
+        25,
+        50,
+        100,
+        200
+      ],
+      "threshold_mult": 2.0
+    },
+    {
+      "id": "solar_microcloud",
+      "name": "Solar Micro-Cloud",
+      "base_cost": 15000,
+      "cost_mult": 1.15,
+      "base_ccps": 50,
+      "base_carbon": 0.1,
+      "base_water": 0.0,
+      "tags": [
+        "mid",
+        "renewable"
+      ],
+      "thresholds": [
+        25,
+        50,
+        100,
+        200
+      ],
+      "threshold_mult": 2.0
+    },
+    {
+      "id": "offshore_dc",
+      "name": "Offshore DC",
+      "base_cost": 40000,
+      "cost_mult": 1.16,
+      "base_ccps": 120,
+      "base_carbon": 0.3,
+      "base_water": 0.0,
+      "tags": [
+        "mid",
+        "offshore",
+        "water_free"
+      ],
+      "thresholds": [
+        25,
+        50,
+        100,
+        200
+      ],
+      "threshold_mult": 2.0
+    },
+    {
+      "id": "hyperscale",
+      "name": "Hyperscale Campus",
+      "base_cost": 200000,
+      "cost_mult": 1.16,
+      "base_ccps": 700,
+      "base_carbon": 8.0,
+      "base_water": 5.0,
+      "tags": [
+        "adv",
+        "land",
+        "carbon_heavy",
+        "water_heavy"
+      ],
+      "thresholds": [
+        25,
+        50,
+        100,
+        200
+      ],
+      "threshold_mult": 2.0
+    },
+    {
+      "id": "arctic_dome",
+      "name": "Arctic Ice Dome",
+      "base_cost": 1000000,
+      "cost_mult": 1.17,
+      "base_ccps": 3500,
+      "base_carbon": 1.0,
+      "base_water": 0.2,
+      "tags": [
+        "adv",
+        "arctic",
+        "disaster_risk"
+      ],
+      "thresholds": [
+        25,
+        50,
+        100,
+        200
+      ],
+      "threshold_mult": 2.0
+    },
+    {
+      "id": "nuclear_dc",
+      "name": "Nuclear-Powered DC",
+      "base_cost": 5000000,
+      "cost_mult": 1.18,
+      "base_ccps": 20000,
+      "base_carbon": 0.2,
+      "base_water": 2.0,
+      "tags": [
+        "adv",
+        "stable",
+        "pr_risk"
+      ],
+      "thresholds": [
+        25,
+        50,
+        100,
+        200
+      ],
+      "threshold_mult": 2.0
+    },
+    {
+      "id": "orbital_station",
+      "name": "Orbital Compute Station",
+      "base_cost": 40000000,
+      "cost_mult": 1.2,
+      "base_ccps": 200000,
+      "base_carbon": 0.0,
+      "base_water": 0.0,
+      "tags": [
+        "late",
+        "space",
+        "special"
+      ],
+      "thresholds": [
+        25,
+        50,
+        100,
+        200
+      ],
+      "threshold_mult": 2.0
+    },
+    {
+      "id": "quantum_megaplex",
+      "name": "Quantum Megaplex",
+      "base_cost": 250000000,
+      "cost_mult": 1.22,
+      "base_ccps": 2000000,
+      "base_carbon": 0.0,
+      "base_water": 0.0,
+      "tags": [
+        "late",
+        "quantum",
+        "unstable"
+      ],
+      "thresholds": [
+        25,
+        50,
+        100,
+        200
+      ],
+      "threshold_mult": 2.0
+    },
+    {
+      "id": "planet_core",
+      "name": "Planetary AI Core",
+      "base_cost": 2000000000,
+      "cost_mult": 1.25,
+      "base_ccps": 25000000,
+      "base_carbon": 0.0,
+      "base_water": 0.0,
+      "tags": [
+        "late",
+        "cosmic",
+        "special"
+      ],
+      "thresholds": [
+        25,
+        50,
+        100,
+        200
+      ],
+      "threshold_mult": 2.0
+    }
+  ]
+}

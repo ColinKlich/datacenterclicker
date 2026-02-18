@@ -1,0 +1,75 @@
+{
+  "regions": [
+    {
+      "id": "na",
+      "name": "North America",
+      "permit_cost": 5000,
+      "mods": {
+        "cost_mult": 1.05,
+        "output_mult": 1.05
+      }
+    },
+    {
+      "id": "eu",
+      "name": "Western Europe",
+      "permit_cost": 10000,
+      "mods": {
+        "cost_mult": 1.1,
+        "carbon_mult": 0.9
+      }
+    },
+    {
+      "id": "sa",
+      "name": "South America",
+      "permit_cost": 3000,
+      "mods": {
+        "cost_mult": 0.9,
+        "water_mult": 1.05
+      }
+    },
+    {
+      "id": "mea",
+      "name": "Middle East",
+      "permit_cost": 4000,
+      "mods": {
+        "heat_risk_mult": 1.2,
+        "solar_mult": 1.1
+      }
+    },
+    {
+      "id": "af",
+      "name": "Africa",
+      "permit_cost": 2500,
+      "mods": {
+        "cost_mult": 0.85,
+        "event_volatility_mult": 1.1
+      }
+    },
+    {
+      "id": "sea",
+      "name": "South/East Asia",
+      "permit_cost": 8000,
+      "mods": {
+        "demand_boost_mult": 1.15,
+        "tax_risk_mult": 1.1
+      }
+    },
+    {
+      "id": "oce",
+      "name": "Oceania",
+      "permit_cost": 4000,
+      "mods": {
+        "event_penalty_mult": 0.9
+      }
+    },
+    {
+      "id": "arctic",
+      "name": "Arctic",
+      "permit_cost": 20000,
+      "mods": {
+        "cooling_bonus": 1.5,
+        "disaster_risk_mult": 2.0
+      }
+    }
+  ]
+}

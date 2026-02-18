@@ -1,0 +1,59 @@
+{
+  "prestige": {
+    "formula": {
+      "A": 1.5,
+      "B": 2,
+      "C_min": 0,
+      "C_max": 20
+    },
+    "base_click": 1,
+    "rp_perk_multiplier": 1.02,
+    "perks": [
+      {
+        "id": "compilers_2x",
+        "name": "Optimized Compilers",
+        "rp_cost": 10,
+        "effects": {
+          "global_mult": 2.0
+        }
+      },
+      {
+        "id": "carbon_free_by_design",
+        "name": "Carbon Free by Design",
+        "rp_cost": 12,
+        "effects": {
+          "global_mult": 1.05,
+          "carbon_mult": 0.8
+        }
+      },
+      {
+        "id": "autonomous_cooling",
+        "name": "Autonomous Cooling",
+        "rp_cost": 8,
+        "effects": {
+          "tags_mult": {
+            "water_heavy": 1.1
+          }
+        }
+      },
+      {
+        "id": "event_planner",
+        "name": "Event Planner",
+        "rp_cost": 6,
+        "effects": {
+          "event_duration_mult": 0.9
+        }
+      },
+      {
+        "id": "quantum_primer",
+        "name": "Quantum Primer",
+        "rp_cost": 15,
+        "effects": {
+          "unlock_generators": [
+            "quantum_megaplex"
+          ]
+        }
+      }
+    ]
+  }
+}
